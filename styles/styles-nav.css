@@ -1,0 +1,240 @@
+/* Base styles: Mobile first */
+header {
+	position: relative;
+}
+
+#name {
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	line-height: 2.5rem;
+
+}
+
+#title {
+
+	margin-top: 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 500;
+	letter-spacing: -0.025em;
+	line-height: 1.75rem;
+
+}
+
+#avi {
+	width: 80%;
+	max-width: 300px;
+	margin: 1rem 0;
+
+	border: 2px solid transparent;
+	border-radius: 16px;
+
+	transition: border-color 0.3s ease-out;
+}
+
+#avi:hover {
+	cursor: pointer;
+	border-color: var(--prim-txt);
+}
+
+#intro {
+	max-width: 20rem;
+	margin-top: 1rem;
+	line-height: 1.5;
+}
+
+nav {
+	display: none;
+}
+
+.link-container {
+
+
+	padding: 0;
+	margin-top: 2rem;
+	display: flex;
+	list-style: none;
+	line-height: 1.625rem;
+
+}
+
+.link-container li {
+
+	margin-right: 1.25rem;
+	font-size: 0.75rem;
+
+}
+
+.link-hover {
+	display: inline;
+}
+
+.link-img {
+
+	width: 1.5rem;
+	height: 1.5rem;
+	max-width: 32px;
+
+	transition: fill 0.3s ease-out;
+
+}
+
+.link-img:hover {
+
+	cursor: pointer;
+	fill: var(--prim-txt);
+}
+
+
+
+
+
+/* Tablets (≥ 600px) */
+@media screen and (min-width: 448px) {
+
+
+	.link-container {}
+
+	.link-container li {}
+
+	.link-hover {}
+
+	.link-img {}
+
+	.link-img:hover {}
+
+}
+
+/* Small laptops (≥ 768px) */
+@media screen and (min-width: 768px) {
+
+	#name {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	#title {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
+	#avi {
+		position: absolute;
+		top: -16px;
+		left: 52%;
+	}
+
+
+
+	.link-container {}
+
+	.link-container li {}
+
+	.link-hover {}
+
+	.link-img {}
+
+	.link-img:hover {}
+
+}
+
+
+
+/* Desktops (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+
+	/*Sets the Header to Flex and seperates the site header and nav w/ space-between*/
+	header {
+		position: sticky;
+		top: 0;
+
+		width: 48%;
+		max-height: 100vh;
+
+		padding: 6rem 0;
+	}
+
+	#avi {
+		position: static;
+	}
+
+
+	nav {
+		display: block;
+	}
+
+	.nav-list {
+		width: max-content;
+		margin: 4rem 0 0 0;
+		list-style: none;
+		padding: 0;
+	}
+
+	.nav-item {
+		padding: 0.75rem 0;
+		display: flex;
+		align-items: center;
+
+
+	}
+
+	.nav-indicator {
+		width: 2rem;
+		height: 1px;
+
+		margin-right: 1rem;
+
+		--tw-bg-opactity: 1;
+		background-color: rgb(71 85 105/var(--tw-bg-opactity));
+
+		transition: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 0.15s;
+	}
+
+	.nav-text {
+
+
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		--tw-bg-opactity: 1;
+		color: rgb(71 85 105/var(--tw-bg-opactity));
+
+	}
+
+	.nav-item:hover .nav-indicator {
+		width: 4rem;
+		--tw-bg-opacity: 1;
+		background-color: rgb(226 232 240/var(--tw-bg-opacity));
+	}
+
+	.nav-item:hover .nav-text {
+		--tw-bg-opacity: 1;
+		color: rgb(226 232 240/var(--tw-bg-opacity));
+	}
+
+	.nav-item.active .nav-indicator {
+		width: 4rem;
+		--tw-bg-opacity: 1;
+		background-color: rgb(226 232 240/var(--tw-bg-opacity));
+	}
+
+	.nav-item.active .nav-text {
+		--tw-bg-opacity: 1;
+		color: rgb(226 232 240/var(--tw-bg-opacity));
+	}
+
+
+	.link-container {}
+
+	.link-container li {}
+
+	.link-hover {}
+
+	.link-img {}
+
+	.link-img:hover {}
+
+}

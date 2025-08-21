@@ -1,0 +1,161 @@
+/*** CSS Global Reset ***/
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	/* 4. Add accessible line-height */
+	line-height: 1.5;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/*General Site Styles*/
+
+:root {
+	--prim-bck: #1D233D;
+	--prim-txt: #F8F8F8;
+	--scnd-txt: #999999;
+}
+
+:root {
+	font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+body {
+	color: var(--scnd-txt);
+	background-color: var(--prim-bck);
+	font-family: 'Inter', sans-serif;
+	line-height: 1.625;
+}
+
+h1,
+h2 {
+	color: var(--prim-txt);
+
+}
+
+a,
+a:link,
+a:visited {
+
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-container {
+
+	max-width: 1280px;
+	min-height: 100vh;
+
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
+
+}
+
+
+/* Tablets (≥ 600px) */
+@media screen and (min-width: 512px) {}
+
+/* Small laptops (≥ 768px) */
+@media screen and (min-width: 768px) {
+	.site-container {
+		padding: 4rem 3rem;
+	}
+}
+
+/* Desktops (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+
+	.site-container {
+		display: flex;
+
+		justify-content: space-between;
+		gap: 1rem;
+
+		padding: 0 3rem;
+
+	}
+
+}
