@@ -81,10 +81,20 @@ h6 {
 
 /*General Site Styles*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
-	--prim-bck: #1D233D;
+	/*--prim-bck: #1D233D;*/
+	--prim-bck: #161712;
 	--prim-txt: #F8F8F8;
 	--scnd-txt: #999999;
+	--opac-txt: #9A9A84;
+	--txt-opac: 0.5;
+	--bkgd-hov: #2D2D25;
+	--highlte: #FF9D00;
+	--hilt-bck: rgba(255, 185, 71, 0.1)
 }
 
 :root {
@@ -105,7 +115,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	color: var(--prim-txt);
 
 }

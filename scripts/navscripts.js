@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(enteries => {
 			link.classList.add("active");
 		}
 	});
-}, { threshold: 0.6 });
+}, { threshold: 0.75 });
 
 sections.forEach(section => observer.observe(section));
 console.log(navLinks);
