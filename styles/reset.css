@@ -91,6 +91,7 @@ html {
 	--prim-txt: #F8F8F8;
 	--scnd-txt: #999999;
 	--opac-txt: #9A9A84;
+	--hilt-txt: #007FFF;
 	--txt-opac: 0.5;
 	--bkgd-hov: #2D2D25;
 	--highlte: #FF9D00;
@@ -121,11 +122,13 @@ h3 {
 
 }
 
+
 a,
 a:link,
 a:visited {
 
 	text-decoration: none;
+	color: inherit;
 }
 
 ol,
@@ -145,6 +148,16 @@ ul {
 
 }
 
+.txt-hilte {
+	color: var(--prim-txt) !important;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+
+.txt-hilte:hover {
+	color: var(--hilt-txt) !important;
+}
 
 /* Tablets (≥ 600px) */
 @media screen and (min-width: 512px) {}
