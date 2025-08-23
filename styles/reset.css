@@ -128,7 +128,7 @@ a:link,
 a:visited {
 
 	text-decoration: none;
-	color: inherit;
+	color: var(--prim-txt);
 }
 
 ol,
@@ -136,6 +136,24 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+footer {
+	max-width: 28rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: var(--opac-txt);
+}
+
+.BC {
+	color: var(--prim-txt);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+
+.BC:hover {
+	color: rgb(94 234 212);
 }
 
 .site-container {
@@ -155,12 +173,22 @@ ul {
 	transition-duration: 0.15s;
 }
 
-.txt-hilte:hover {
+#about .txt-hilte:hover {
 	color: var(--hilt-txt) !important;
 }
 
+footer .txt-hilte:hover {
+	color: var(--highlte) !important;
+}
+
 /* Tablets (≥ 600px) */
-@media screen and (min-width: 512px) {}
+@media screen and (min-width: 640px) {
+
+	footer {
+		padding-bottom: 0;
+	}
+
+}
 
 /* Small laptops (≥ 768px) */
 @media screen and (min-width: 768px) {

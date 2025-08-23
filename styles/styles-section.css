@@ -236,6 +236,10 @@ section {
 /* Small laptops (≥ 768px) */
 @media screen and (min-width: 768px) {
 
+	section {
+		margin-bottom: 6rem;
+	}
+
 	.section-header {
 		margin-left: -3rem;
 		margin-right: -3rem;
@@ -258,6 +262,11 @@ section {
 		width: 52%;
 		padding: 6rem 0;
 
+	}
+
+	section {
+		margin-bottom: 9rem;
+		scroll-margin-top: 6rem;
 	}
 
 	.section-header {
