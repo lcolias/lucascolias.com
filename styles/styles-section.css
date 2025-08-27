@@ -106,7 +106,7 @@ section {
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.25;
-	--tw-text-opacity: 1;
+
 
 }
 
@@ -117,12 +117,14 @@ section {
 	line-height: 1.375;
 	font-size: inherit;
 	font-weight: 500;
-	--tw-text-opacity: 1;
-
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	transition-duration: .15s;
 }
 
 .exp-content p,
 .proj-content p {
+	color: var(--opac-txt);
 	margin: 0.5rem 0 0 0;
 	font-size: 0.875rem;
 	line-height: 1.5;
@@ -168,7 +170,7 @@ section {
 
 }
 
-.inter-txt {}
+
 
 .inter-arrow {
 	display: inline-block;
@@ -307,4 +309,11 @@ section {
 	.media-item:hover .media-bkgd {
 		background-color: var(--bkgd-hov);
 	}
+
+	.exp-item:hover .exp-content h3,
+	.proj-item:hover .proj-content h3,
+	.media-item:hover .media-content h3 {
+		color: var(--highlte);
+	}
+
 }
