@@ -1,0 +1,167 @@
+/* Styles for the landing page */
+.site-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#name {
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	line-height: 2.5rem;
+
+}
+
+#title {
+
+	margin-top: 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 500;
+	letter-spacing: -0.025em;
+	line-height: 1.75rem;
+
+}
+
+#avi {
+	width: 100%;
+	max-width: 300px;
+	margin: 1rem 0;
+
+	border: 2px solid var(--highlte);
+	border-radius: 16px;
+
+	transition: border-color 0.3s ease-out;
+}
+
+#avi:hover {
+	cursor: pointer;
+	border-color: var(--prim-txt);
+}
+
+#intro {
+	max-width: 19rem;
+	margin-top: 1rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+nav {
+	display: none;
+}
+
+.link-container {
+
+
+	padding: 0;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	list-style: none;
+	line-height: 1.625rem;
+
+}
+
+.link-container li {
+	margin: auto 1rem;
+	font-size: 0.75rem;
+}
+
+.link-hover {
+	display: inline;
+}
+
+.link-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 0.25rem;
+}
+
+.link-img {
+
+	width: 3rem;
+	height: 3rem;
+	max-width: 64px;
+	fill: var(--opac-txt);
+	transition: fill 0.3s ease-out;
+}
+
+.link-txt {
+
+
+	font-size: 0.675rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+
+	color: var(--opac-txt);
+	transition: color 0.3s ease-out;
+}
+
+.link-item:hover .link-img,
+.link-item:hover .link-txt {
+
+	cursor: pointer;
+	fill: var(--highlte);
+	color: var(--highlte);
+}
+
+.link-img:active {
+	fill: var(--highlte);
+}
+
+
+/* Tablets (≥ 600px) */
+@media screen and (min-width: 448px) {}
+
+/* Small laptops (≥ 768px) */
+@media screen and (min-width: 768px) {
+
+	#name {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	#title {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
+
+
+}
+
+
+
+/* Desktops (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+
+	/*Sets the Header to Flex and seperates the site header and nav w/ space-between*/
+
+
+	.nav-item:hover .nav-indicator,
+	.nav-item.active .nav-indicator {
+		width: 4rem;
+		background-color: var(--prim-txt);
+	}
+
+	.nav-item:hover .nav-text,
+	.nav-item.active .nav-text {
+		color: var(--prim-txt);
+	}
+
+
+}

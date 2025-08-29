@@ -1,0 +1,55 @@
+.site-container {
+
+	max-width: 1280px;
+	min-height: 100vh;
+
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
+
+}
+
+.txt-hilte {
+	color: var(--prim-txt) !important;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+
+#about .txt-hilte:hover {
+	color: var(--hilt-txt) !important;
+}
+
+footer .txt-hilte:hover {
+	color: var(--highlte) !important;
+}
+
+/* Tablets (≥ 600px) */
+@media screen and (min-width: 640px) {
+
+	footer {
+		padding-bottom: 0;
+	}
+
+}
+
+/* Small laptops (≥ 768px) */
+@media screen and (min-width: 768px) {
+	.site-container {
+		padding: 4rem 3rem;
+	}
+}
+
+/* Desktops (≥ 1024px) */
+@media screen and (min-width: 1024px) {
+
+	.site-container {
+		display: flex;
+
+		justify-content: space-between;
+		gap: 1rem;
+
+		padding: 0 3rem;
+
+	}
+
+}
