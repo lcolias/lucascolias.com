@@ -5,19 +5,17 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 
-	<title>Lucas Colias - Vibe to Stride Coding</title>
+	<title>Lucas Colias</title>
 	<meta name="description"
-		content="Personal website and Blog of Lucas Colias. Join my coding journey through my blog, Vibe to Stride Coding, where I track my educational progress with new and old technologies and try to pass on that knowledge to whoever needs it." />
+		content="Personal site of Lucas Colias, a Full Stack Engineer. Explore coding tutorials, projects, and my blog Vibe to Stride Coding." />
 	<meta name="image" content="https://lucascolias.com/images/og_image.png">
-	<meta name="keywords"
-		content="Learn to Code, HTML, CSS, Javascript, Full Stack, Nginx, Raspberry Pi, Cloudflare, Software Engineering">
 	<meta name="author" content="Lucas Colias" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<link rel="canonical" href="https://lucascolias.com" />
 
 	<!-- Open Graph / Social Sharing -->
-	<meta property="og:title" content="Lucas Colias - Vibe to Stride Coding" />
+	<meta property="og:title" content="Lucas Colias" />
 	<meta property="og:description" content="Explore the work and projects of Full Stack Engineer Lucas Colias." />
 	<meta property="og:image" content="https://lucascolias.com/images/og_image.png" />
 	<meta property="og:url" content="https://lucascolias.com" />
@@ -25,7 +23,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@_duke_luke_" />
 	<meta name="twitter:creator" content="@_duke_luke_" />
-	<meta name="twitter:title" content="Lucas Colias - Vibe to Stride Coding" />
+	<meta name="twitter:title" content="Lucas Colias" />
 	<meta name="twitter:description" content="Explore the work and projects of Full Stack Engineer Lucas Colias." />
 	<meta name="twitter:image" content="https://lucascolias.com/images/og_image.png" />
 	<meta name="twitter:url" content="https://lucascolias.com" />
@@ -37,29 +35,60 @@
 	<link rel="stylesheet" href="web/inter.css">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/styles-landing.css">
-
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"url": "https://lucascolias.com/",
+		"name": "Lucas Colias",
+		"description": "Software Engineer and Developer Portfolio of Lucas Colias. Explore projects, experience, and technical insights.",
+		"publisher": {
+			"@type": "Person",
+			"name": "Lucas Colias",
+			"url": "https://lucascolias.com/"
+		},
+		"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://lucascolias.com/search?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SiteNavigationElement",
+		"name": ["Home", "Portfolio", "Projects", "Blog"],
+		"url": [
+			"https://lucascolias.com/",
+			"https://lucascolias.com/portfolio",
+			"https://lucascolias.com/projects",
+			"https://lucascolias.com/blog"
+		]
+	}
+	</script>
 </head>
 
 <body>
-
 	<div class="site-container">
 		<header>
 			<h1 id="name">Lucas Colias</h1>
 			<h2 id="title">Full Stack Engineer</h2>
 			<img id="avi" src="images/avi.png" alt="A picture of myself">
 			<p id="intro">Hey everyone, I'm Lucas. I'm posting my learning journey here. </p>
-			<ul class="link-container">
-				<li>
-					<a class="link-item" href="portfolio/"
-						aria-label="Portfolio (Opens in same tab)" title="Portfolio">
-						<!--span class="link-hover">GitHub</span-->
-						<svg class="link-img" version="1.1" id="Layer_1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-							xml:space="preserve">
-							<g>
+			<nav>
+				<ul class="link-container">
+					<li>
+						<a class="link-item" href="portfolio/"
+							aria-label="Portfolio (Opens in same tab)" title="Portfolio">
+							<!--span class="link-hover">GitHub</span-->
+							<svg class="link-img" version="1.1" id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								viewBox="0 0 512 512" xml:space="preserve">
 								<g>
-									<path d="M469.779,94.063H352.573l-9.106-36.426c-4.709-18.832-21.554-31.983-40.962-31.983h-93.011
+									<g>
+										<path d="M469.779,94.063H352.573l-9.106-36.426c-4.709-18.832-21.554-31.983-40.962-31.983h-93.011
 			c-19.408,0-36.253,13.152-40.963,31.984l-9.105,36.425H42.221C18.941,94.063,0,113.003,0,136.284v307.841
 			c0,23.281,18.941,42.221,42.221,42.221h427.557c23.281,0,42.221-18.941,42.221-42.221V136.284
 			C512,113.003,493.059,94.063,469.779,94.063z M184.086,61.528c2.922-11.682,13.371-19.841,25.409-19.841h93.011
@@ -74,57 +103,58 @@
 			c-14.44,0-26.188-11.748-26.188-26.188V151.481l43.042,129.126c6.922,20.765,26.279,34.717,48.168,34.717H222.33v34.739
 			c0,9.136,7.432,16.568,16.568,16.568h34.205c9.136,0,16.568-7.432,16.568-16.568v-34.739h115.087
 			c21.889,0,41.245-13.951,48.168-34.717l43.042-129.126V444.125z" />
+									</g>
 								</g>
-							</g>
-						</svg>
-						<h4 class="link-txt">Portfolio</h4>
-					</a>
-				</li>
-				<li>
-					<a class="link-item" href="projects/" aria-label="Projects (opens in this tab)"
-						title="Projects">
-						<!--span class="link-hover">Instagram</span-->
-						<svg fill="var(--scnd-txt)" class="link-img" viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg">
-							<path d="M16.4425 7.32787C16.7196 7.01999 17.1938 6.99503 17.5017 7.27213L19.2392 8.83587C19.9756 9.49853 20.5864 10.0482 21.0058 10.5468C21.4468 11.071 21.7603 11.6343 21.7603 12.3296C21.7603 13.0249 21.4468 13.5882 21.0058 14.1124C20.5864 14.611 19.9756 15.1607 19.2392 15.8233L17.5017 17.3871C17.1938 17.6642 16.7196 17.6392 16.4425 17.3313C16.1654 17.0234 16.1904 16.5492 16.4983 16.2721L18.1947 14.7453C18.9826 14.0362 19.5138 13.5558 19.8579 13.1468C20.1882 12.7542 20.2603 12.525 20.2603 12.3296C20.2603 12.1342 20.1882 11.905 19.8579 11.5124C19.5138 11.1034 18.9826 10.623 18.1947 9.91389L16.4983 8.38707C16.1904 8.10997 16.1654 7.63576 16.4425 7.32787Z" " />
+							</svg>
+							<h4 class="link-txt">Portfolio</h4>
+						</a>
+					</li>
+					<li>
+						<a class="link-item" href="projects/"
+							aria-label="Projects (opens in this tab)" title="Projects">
+							<!--span class="link-hover">Instagram</span-->
+							<svg fill="var(--scnd-txt)" class="link-img" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.4425 7.32787C16.7196 7.01999 17.1938 6.99503 17.5017 7.27213L19.2392 8.83587C19.9756 9.49853 20.5864 10.0482 21.0058 10.5468C21.4468 11.071 21.7603 11.6343 21.7603 12.3296C21.7603 13.0249 21.4468 13.5882 21.0058 14.1124C20.5864 14.611 19.9756 15.1607 19.2392 15.8233L17.5017 17.3871C17.1938 17.6642 16.7196 17.6392 16.4425 17.3313C16.1654 17.0234 16.1904 16.5492 16.4983 16.2721L18.1947 14.7453C18.9826 14.0362 19.5138 13.5558 19.8579 13.1468C20.1882 12.7542 20.2603 12.525 20.2603 12.3296C20.2603 12.1342 20.1882 11.905 19.8579 11.5124C19.5138 11.1034 18.9826 10.623 18.1947 9.91389L16.4983 8.38707C16.1904 8.10997 16.1654 7.63576 16.4425 7.32787Z" " />
 							<path d=" M7.50178 8.38707C7.80966 8.10997 7.83462 7.63576 7.55752 7.32787C7.28043 7.01999 6.80621 6.99503
-								6.49833 7.27213L4.76084 8.83587C4.0245 9.49853 3.41369
-								10.0482 2.99428 10.5468C2.55325 11.071 2.23975 11.6343
-								2.23975 12.3296C2.23975 13.0249 2.55325 13.5882 2.99428
-								14.1124C3.41369 14.611 4.02449 15.1607 4.76082
-								15.8233L6.49833 17.3871C6.80621 17.6642 7.28043 17.6392
-								7.55752 17.3313C7.83462 17.0234 7.80966 16.5492 7.50178
-								16.2721L5.80531 14.7453C5.01743 14.0362 4.48623 13.5558
-								4.14213 13.1468C3.81188 12.7542 3.73975 12.525 3.73975
-								12.3296C3.73975 12.1342 3.81188 11.905 4.14213
-								11.5124C4.48623 11.1034 5.01743 10.623 5.80531
-								9.91389L7.50178 8.38707Z" " />
+									6.49833 7.27213L4.76084 8.83587C4.0245 9.49853
+									3.41369 10.0482 2.99428 10.5468C2.55325 11.071
+									2.23975 11.6343 2.23975 12.3296C2.23975 13.0249
+									2.55325 13.5882 2.99428 14.1124C3.41369 14.611
+									4.02449 15.1607 4.76082 15.8233L6.49833
+									17.3871C6.80621 17.6642 7.28043 17.6392 7.55752
+									17.3313C7.83462 17.0234 7.80966 16.5492 7.50178
+									16.2721L5.80531 14.7453C5.01743 14.0362 4.48623
+									13.5558 4.14213 13.1468C3.81188 12.7542 3.73975
+									12.525 3.73975 12.3296C3.73975 12.1342 3.81188
+									11.905 4.14213 11.5124C4.48623 11.1034 5.01743
+									10.623 5.80531 9.91389L7.50178 8.38707Z" " />
 							<path opacity=" 0.5" d="M14.1816 4.2755C14.5817 4.3827 14.8191 4.79396 14.7119 5.19406L10.7383 20.0238C10.6311 20.4239 10.2198 20.6613 9.81974 20.5541C9.41964 20.4469 9.18221 20.0356 9.28941 19.6355L13.263 4.80583C13.3702 4.40573 13.7815 4.16829 14.1816 4.2755Z" " />
 						</svg> 
 						<h4 class=" link-txt">Projects</h4>
-					</a>
-				</li>
-				<li>
-					<a class="link-item" href="blog/" aria-label="Blog (opens in this tab)"
-						title="Blog">
-						<!--span class="link-hover">LinkedIn</span-->
-						<svg fill="var(--scnd-txt)" class="link-img" version="1.1" id="Layer_1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-							xml:space="preserve">
-							<g>
+						</a>
+					</li>
+					<li>
+						<a class="link-item" href="blog/" aria-label="Blog (opens in this tab)"
+							title="Blog">
+							<!--span class="link-hover">LinkedIn</span-->
+							<svg fill="var(--scnd-txt)" class="link-img" version="1.1"
+								id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								viewBox="0 0 512 512" xml:space="preserve">
 								<g>
 									<g>
-										<path d="M93.238,220.968h172.463c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084H93.238
+										<g>
+											<path d="M93.238,220.968h172.463c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084H93.238
 				c-4.466,0-8.084,3.619-8.084,8.084S88.772,220.968,93.238,220.968z" />
-										<path d="M93.238,177.853h97.01c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084h-97.01
+											<path d="M93.238,177.853h97.01c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084h-97.01
 				c-4.466,0-8.084,3.619-8.084,8.084S88.772,177.853,93.238,177.853z" />
-										<path d="M114.796,398.282h280.253c16.344,0,29.642-13.298,29.642-29.642v-91.082c0-5.206-1.371-10.333-3.968-14.822
+											<path d="M114.796,398.282h280.253c16.344,0,29.642-13.298,29.642-29.642v-91.082c0-5.206-1.371-10.333-3.968-14.822
 				c-2.233-3.865-7.179-5.189-11.044-2.953c-3.866,2.233-5.188,7.179-2.953,11.044c1.176,2.034,1.797,4.362,1.797,6.732v91.082
 				c0,7.43-6.044,13.474-13.474,13.474H114.796c-7.43,0-13.474-6.044-13.474-13.474v-91.082c0-7.43,6.044-13.474,13.474-13.474
 				h150.905c4.466,0,8.084-3.619,8.084-8.084c0-4.466-3.618-8.084-8.084-8.084H114.796c-16.344,0-29.642,13.298-29.642,29.642
 				v91.082C85.154,384.984,98.452,398.282,114.796,398.282z" />
-										<path d="M477.068,412.237c1.684-5.067,2.596-10.484,2.596-16.11V158.989c0-28.231-22.969-51.2-51.2-51.2h-45.81V29.642
+											<path d="M477.068,412.237c1.684-5.067,2.596-10.484,2.596-16.11V158.989c0-28.231-22.969-51.2-51.2-51.2h-45.81V29.642
 				C382.653,13.298,369.355,0,353.01,0h-21.558c-16.344,0-29.642,13.298-29.642,29.642v78.147H83.537
 				c-28.231,0-51.2,22.969-51.2,51.2v237.137c0,5.627,0.912,11.043,2.596,16.11C14.43,419.065,0,438.368,0,460.8
 				C0,489.031,22.969,512,51.2,512h409.6c28.231,0,51.2-22.969,51.2-51.2C512,438.368,497.57,419.065,477.068,412.237z
@@ -140,42 +170,27 @@
 				c-19.317,0-35.032-15.715-35.032-35.032V158.989z M460.8,495.832H51.2c-19.317,0-35.032-15.715-35.032-35.032
 				c0-16.257,11.071-30.113,26.426-33.963c9.349,12.434,24.222,20.49,40.943,20.49h344.926c16.72,0,31.594-8.056,40.943-20.49
 				c15.355,3.85,26.426,17.707,26.426,33.963C495.832,480.117,480.117,495.832,460.8,495.832z" />
-										<path d="M235.52,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078
+											<path d="M235.52,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078
 				c4.466,0,8.084-3.618,8.084-8.084C243.604,467.113,239.986,463.495,235.52,463.495z" />
-										<path d="M433.853,463.495H272.168c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h161.684
+											<path d="M433.853,463.495H272.168c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h161.684
 				c4.466,0,8.084-3.618,8.084-8.084C441.937,467.113,438.318,463.495,433.853,463.495z" />
-										<path d="M202.105,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078
+											<path d="M202.105,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078
 				c4.466,0,8.084-3.618,8.084-8.084C210.189,467.113,206.571,463.495,202.105,463.495z" />
-										<path d="M164.379,463.495H78.147c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h86.232
+											<path d="M164.379,463.495H78.147c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h86.232
 				c4.466,0,8.084-3.618,8.084-8.084C172.463,467.113,168.845,463.495,164.379,463.495z" />
+										</g>
 									</g>
 								</g>
-							</g>
-						</svg>
-						<h4 class="link-txt">Blog</h4>
+							</svg>
+							<h4 class="link-txt">Blog</h4>
 
-					</a>
-				</li>
-			</ul>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 	</div>
-
-	<!-- Load scripts here -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Lucas Colias",
-		"jobTitle": "Full Stack Engineer",
-		"url": "https://lucascolias.com",
-		"sameAs": [
-			"https://github.com/lcolias",
-			"https://www.linkedin.com/in/lucas-colias/",
-			"https://www.instagram.com/_duke_luke_/"
-		]
-	}
-	</script>
 </body>
 
 </html>
