@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Placeholders for SEO + OpenGraph -->
+	<title id="page-title"></title>
+	<meta id="meta-description" name="description" content="" />
+	<meta id="meta-keywords" name="keywords" content="" />
+	<link id="canonical-link" rel="canonical" href="" />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="" id="og-title" />
+	<meta property="og:description" content="" id="og-description" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="" id="og-url" />
+	<meta property="og:image" content="" id="og-image" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" id="twitter-title" />
+	<meta name="twitter:description" content="" id="twitter-description" />
+	<meta name="twitter:image" content="" id="twitter-image" />
+
+	<!-- JSON-LD structured data will be inserted dynamically -->
+	<script id="structured-data" type="application/ld+json"></script>
+</head>
+
+<body>
+	<main>
+		<article>
+			<h1 id="article-title"></h1>
+			<div>
+				<h2 id="article-author"></h2> ·
+				<time id="article-date"></time>
+			</div>
+			<img id="article-image" alt="" />
+			<section id="article-content"></section>
+		</article>
+	</main>
+
+	<script>
+		// Config (edit this only once per post)
+		const postConfig = {
+			title: "Building a Web Server from Scratch",
+			description: "A journal and guide on how to build and host a website on personal server at home.",
+			tags: ["Fullstack", "HTML/CSS", "JavaScript", "Raspberry PI", "Nginx", "Cloudflare"],
+			author: "Lucas Colias",
+			datePublished: "2025-09-01",
+			image: "../../images/raspberryServerImg.png",
+			url: "https://lucascolias.com/blog/posts/post1-web-server-from-scratch.html",
+		};
+
+		// Fill <head> meta tags
+		document.title = postConfig.title;
+		document.querySelector("#meta-description").content = postConfig.description;
+		document.querySelector("#meta-keywords").content = postConfig.keywords;
+		document.querySelector("#canonical-link").href = postConfig.url;
+		document.querySelector("#og-title").content = postConfig.title;
+		document.querySelector("#og-description").content = postConfig.description;
+		document.querySelector("#og-url").content = postConfig.url;
+		document.querySelector("#og-image").content = postConfig.image;
+		document.querySelector("#twitter-title").content = postConfig.title;
+		document.querySelector("#twitter-description").content = postConfig.description;
+		document.querySelector("#twitter-image").content = postConfig.image;
+
+		// Inject structured data
+		const ldJson = {
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": postConfig.title,
+			"description": postConfig.description,
+			"image": postConfig.image,
+			"author": {
+				"@type": "Person",
+				"name": postConfig.author
+			},
+			"datePublished": postConfig.datePublished,
+			"url": postConfig.url
+		};
+		document.querySelector("#structured-data").textContent = JSON.stringify(ldJson);
+
+		// Fill <body> content
+		document.querySelector("#article-title").textContent = postConfig.title;
+		document.querySelector("#article-author").textContent = postConfig.author;
+		document.querySelector("#article-date").textContent = postConfig.datePublished;
+		document.querySelector("#article-image").src = postConfig.image;
+		document.querySelector("#article-image").alt = postConfig.title;
+		document.querySelector("#article-content").innerHTML = postConfig.content;
+	</script>
+</body>
+
+</html>
