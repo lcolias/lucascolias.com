@@ -7,16 +7,16 @@ const posts = [
 		author: "Lucas Colias",
 		datePublished: "2025-09-01",
 		image: "../images/raspberryServerImg.png",
-		url: "https://lucascolias.com/blog/posts/post1-web-server-from-scratch.html",
+		url: "https://lucascolias.com/blog/posts/post1-web-server-from-scratch",
 	},
 	{
-		title: "My First Blog Post",
-		description: "This is a description",
-		tags: ["coding", "html"],
+		title: "First Post",
+		description: "What my blog is about.",
+		tags: ["Personal"],
 		author: "Lucas Colias",
-		publishDate: "2025-08-30",
-		image: "../images/post1.jpg",
-		url: "/blog/post1.html"
+		publishDate: "2025-08-31",
+		image: "../images/",
+		url: "https://lucascolias.com/blog/posts/post0-vibes-to-stides"
 	}
 ];
 

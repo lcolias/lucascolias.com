@@ -31,13 +31,18 @@
 <body>
 	<main>
 		<article>
-			<h1 id="article-title"></h1>
-			<div>
-				<h2 id="article-author"></h2> ·
-				<time id="article-date"></time>
-			</div>
-			<img id="article-image" alt="" />
-			<section id="article-content"></section>
+			<header>
+				<h1 id="article-title"></h1>
+				<div>
+					<h2 id="article-author"></h2> ·
+					<time id="article-date"></time>
+				</div>
+				<ul id="article-tags"></ul>
+				<img id="article-image" alt="" />
+			</header>
+			<section id="article-content">
+
+			</section>
 		</article>
 	</main>
 
@@ -46,12 +51,14 @@
 		const postConfig = {
 			title: "",
 			description: "",
-			keywords: "",
+			tags: [""],
 			author: "Lucas Colias",
-			datePublished: "",
-			image: "",
-			url: "https://lucascolias.com/blog/title",
+			datePublished: "2025-09-01",
+			image: "../../images/",
+			url: "https://lucascolias.com/blog/posts/",
 		};
+
+		const tags = postConfig.tags.map(tag => `<li>${tag}</li>`).join("");
 
 		// Fill <head> meta tags
 		document.title = postConfig.title;
@@ -88,7 +95,7 @@
 		document.querySelector("#article-date").textContent = postConfig.datePublished;
 		document.querySelector("#article-image").src = postConfig.image;
 		document.querySelector("#article-image").alt = postConfig.title;
-		document.querySelector("#article-content").innerHTML = postConfig.content;
+		document.querySelector("#article-tags").innerHTML = tags;
 	</script>
 </body>
 
