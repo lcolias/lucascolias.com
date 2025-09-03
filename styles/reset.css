@@ -145,6 +145,10 @@ footer {
 	color: var(--opac-txt);
 }
 
+.none {
+	display: none;
+}
+
 .BC {
 	color: var(--prim-txt);
 	transition-property: all;
