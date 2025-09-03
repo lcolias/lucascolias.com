@@ -10,13 +10,13 @@ const posts = [
 		url: "https://lucascolias.com/blog/posts/post1-web-server-from-scratch",
 	},
 	{
-		title: "First Post",
-		description: "What my blog is about.",
+		title: "Vibes to Strides Post 0",
+		description: "What this blog is all about.",
 		tags: ["Personal"],
 		author: "Lucas Colias",
-		publishDate: "2025-08-31",
-		image: "../images/",
-		url: "https://lucascolias.com/blog/posts/post0-vibes-to-stides"
+		datePublished: "9/1/2025",
+		image: "../images/post0-min.png",
+		url: "https://lucascolias.com/blog/posts/post0-vibes-to-strides",
 	}
 ];
 
@@ -34,7 +34,7 @@ async function loadBlogPosts() {
 				<a href="${post.url}">
 					<div class="blog-item-bkgd"></div> <div class="blog-item-content">
 						<h2 class="blog-title">${post.title}</h2>
-						<h3 class="blog-info">By ${post.author} • ${new Date(post.publishDate).toLocaleDateString()}</h3>
+						<h3 class="blog-info">By ${post.author} • ${post.datePublished}</h3>
 						<p class="blog-description">${post.description}</p>	
 						<ul class="blog-tags">
 							${tags}
