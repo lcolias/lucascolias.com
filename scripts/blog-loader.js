@@ -5,7 +5,7 @@ const posts = [
 		description: "A journal and guide on how to build and host a website on personal server at home.",
 		tags: ["Fullstack", "HTML/CSS", "JavaScript", "Raspberry PI", "Nginx", "Cloudflare"],
 		author: "Lucas Colias",
-		datePublished: "2025-09-01",
+		datePublished: "9/10/2025",
 		image: "../images/raspberryServerImg.png",
 		url: "https://lucascolias.com/blog/posts/post1-web-server-from-scratch",
 	},
